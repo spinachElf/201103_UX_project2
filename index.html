@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+		@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+		@font-face {
+    font-family: 'MapoHongdaeFreedom';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoHongdaeFreedomA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+		html{scroll-behavior: smooth;word-break: keep-all;}
+		body{background-color: #ffcc33;
+			background-image: url(back_particle.png);
+			background-size:contain; margin:auto;}
+		footer{background-color: #8E2DE2;}
+		footer p{font-family: GmarketSansMedium; padding:10px 0; color: #ffcc33;}
+		nav{font-family: GmarketSansMedium;display: block;height: 50px; margin-top: 0px;position:fixed;top:25%; left: 0; right: 0;}
+		nav ul{width: 50px; height: 50px; margin-right: 30px;}
+		nav li{;list-style-type: none;width: 50px; text-align: center;line-height: 50px; border-radius: 100%; background-color:#8E2DE2; color:#ffcc33; margin-bottom: 30px;}
+		.menu{}
+		.menu:visited{color: #ffcc33;}
+		a{display: block; text-decoration: none; color: #ffcc33}
+		section{text-align: center; margin-left: auto;margin-right: auto;margin-bottom: 500px;}
+		section ol{width: 500px; border: 2px solid black;margin-top: 50px; margin-left: auto;margin-right: auto; background-color: white;height: auto; padding-top: 30px; padding-right: 15px; line-height: 30px; text-align: left;}
+		section ul{text-align: left; padding: 5px 40px;list-style-position: outside;}
+		section li{font-family: GmarketSansMedium; line-height: 2; margin-bottom: 30px;}
+		section div{padding: 10% 10px;}
+		div img{display: block;margin: auto;}
+		div h2{margin: 50px 10px;}
+		.title{font-family: MapoHongdaeFreedom; font-size: 7em; font-weight: normal;}
+		.blc20{margin-left: 20%;}
+		.blc50{margin-left: 50%;}
+		.blc35{margin-left: 35%;}
+		.blc10{margin-left: 10%;}
+		.blc40{margin-left: 40%;}
+		.imgborder{border: 4px solid #8E2DE2;}
+		h1{font-family: MapoHongdaeFreedom;font-size: 5em; font-weight: normal;margin: 10px; color: #8E2DE2; line-height: 1.2;}
+		h2{font-family: GmarketSansMedium;border: 3px solid #8E2DE2;
+			background-color: white;
+			padding: 30px; width: 350px;
+			margin-bottom: 100px;}
+		h3{font-family: GmarketSansMedium;font-size: 2em; margin-bottom: 15px;}
+		p{font-family: GmarketSansMedium;text-align: left;color: black;}
+		span p{padding-top: 25%;padding-bottom: 10px; margin: 0px 10px;}
+		img{width: 100%; height: 100%;}
+		.row{width: 60%; }
+		.row2{width: 80%; padding: 0px;}
+		.flex{display: flex; justify-content: center; margin: 50px auto;}
+		section span{position: relative;color: white; margin: 10px;}
+		.flex70{width: 70%; display: block;margin: auto;}
+		.flex50{width: 50%; display: block;margin: auto;}
+		.flex30{width: 30%}
+		.buyfont{font-size: 3em; text-align: left;}
+		.txtbox{display: table;border: 2px solid #8E2DE2; background: white;padding: 2px; }
+		.hr1{height: 3px; background-color: #8E2DE2; border: 1px solid #8E2DE2;}
+		.pay{font-size: 3em; margin-top: 0px; margin-bottom: 20px;}
+		select{margin-bottom: 10px;}
+		.button{display: inline-block;background:white;border: 4px solid #8E2DE2; width: 150px; height: 80; margin-top:none;margin-bottom: 20px; margin-right: 20px; font-weight: bold; color: #8E2DE2; padding: 10px;}
+		.button:hover{background:#8E2DE2; color:white;transition: all 0.3s;}
+		.mar30{margin-left: 30px;}
+		.logo{width: 20%; padding: 5px; margin: 0px auto; display: block;}
+	</style>
+</head>
+<body>
+<nav>
+	<ul>
+		<li>
+		<a href="#products_all">전체</a>
+		</li>
+		<li>
+		<a href="#all">활용</a>
+		</li>
+		<li>
+		<a href="#detail">상세</a>
+		</li>
+		<li>
+		<a href="#review">리뷰</a>
+		</li>
+		<li>
+		<a href="#caution">주의</a>
+		</li>
+		<li>
+		<a href="#buy">구매</a>
+		</li>
+	</ul>
+</nav>
+<section class="row">
+	<h2 class="blc20">특별한 생일을 보내고 싶어</h2>
+	<h2 class="blc50">친구 생일, 좀 과하게 챙겨줄까?</h2>
+	<h2 class="blc35">유쾌한 생일 파티 해 보고 싶다</h2>
+	<h2 class="blc10">코로나 때문에 <br>올해 생일 파티는 글렀나?</h2>
+	<h2 class="blc40">아이돌 생일 광고처럼 해보자!</h2>
+</section>
+<section id="products_all">
+	<h3>유쾌한 생일을 원하는 당신에게</h3>
+	<h1>최고의 생일을 위한<br><h1 class="title">🎉생일 파티 키트🥳</h1></h1>
+	<img src="products_all.png" class="row">
+</section>
+<section id="all" class="row">
+	<h3>생일 파티 키트와 함께하는</h3>
+	<h1>특별하고 유쾌한 추억</h1>
+	<img src="all.png">
+</section>
+<section id="detail" class="row">
+	<h3>즐거운 하루를 위한</h3>
+	<h1>알차고 꽉찬 구성</h1>
+	<div class="flex">
+		<img src="good1.gif">
+		<div>
+			<h2>생일 축하 모자</h2>
+			<ul>
+				<li>서로 다른 색상의 8가지 초가 꽂힌 귀여운 모자</li>
+				<li>분홍빛이 감도는 모자에 Happy Birthday라고 수놓아져있어요.</li>
+				<li>친구 얼굴에 케이크는 처치곤란! <br>이제 친구 머리에 케이크 모자를 얹어보세요.</li>
+				<li>먹는 케이크 전에 가짜 케이크로 활용할 수 있어요.</li>
+				<li>다양한 행사에서 활용할 수 있어요. </li>
+			</ul>
+		</div>
+	</div>
+	<div class="flex">
+		<img src="good2.gif">
+		<div>
+			<h2>파티 선글라스</h2>
+			<ul>
+				<li>(위에서부터) 분홍 파티, 생일 컵케이크, 화이트 생일 파티 컨셉의 선글라스 3종</li>
+				<li>생일 축하 모자와 잘 어울리는 분홍빛을 띠고 있어요.</li>
+				<li>친구에게 선물하는 대신, 내가 써서 친구보다 주목 받을 수 있어요.</li>
+				<li>눈을 가려서, 이 이상하고 신나는 생일파티에서 자신감 있게 사진을 남길 수 있어요.</li>
+				<li>생일 외의 파티에서도 착용할 수 있어요.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="flex">
+		<img src="good3.gif">
+		<div>
+			<h2>깜짝! 생일 연꽃초</h2>
+			<ul>
+				<li>그 누구보다 - 심지어 생일 당사자보다도 - 빛나는 생일 축하 양초</li>
+				<li>가운데 심지에 불을 붙이면, 연꽃이 펼쳐지며 빙글빙글 돌아가요.</li>
+				<li>생일 축하 노래가 흘러나와 노래 합창을 자연스럽게 유도해요.</li>
+				<li>때때로 반 음 낮은 노래가 나오기도 하지만, 웃긴 분위기를 만들어줘요.</li>
+				<li>평범한 생일초, 숫자초 저리비켜!</li>
+			</ul>
+		</div>
+	</div>
+	<div class="flex">
+		<img src="good5.gif">
+		<div>
+			<h2>생일 당사자<br>미니 현수막</h2>
+			<ul>
+				<li>지하철역에 걸리는 아이돌 생일 광고의 주인공이 될 수 있는 미니 현수막</li>
+				<li>친구를 아이돌로 만들어보세요!</li>
+				<li>수치스러운 한편 꽤 기분이 좋은 것 같은 친구를 두고 두고 놀려보세요.</li>
+				<li>생일 당사자의 사진을 첨부하고, 현수막 유형 (분홍, 초록, 파랑) 중 하나를 선택하면 아주 간단한 보정과 합성을 통해 제작해드려요.</li>
+				<li>디자인의 변형이나 추가 디자인은 불가능해요.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="flex">
+		<img src="good4.gif">
+		<div>
+			<h2>생일 당사자<br>포토카드 2종</h2>
+			<ul>
+				<li>앨범 속 아이돌 포토카드의 주인공이 될 수 있는 포토카드</li>
+				<li>생일 당사자의 깜찍한 사진을 더욱 깜찍하게 만들어 보세요.</li>
+				<li>선물을 받은 후 수치스럽고 당황스럽지만, 동시에 웃기고 기분 좋은 친구를 지켜보세요.</li>
+				<li>생일 당사자의 사진을 최대 2장 첨부하면, 포토카드를 최대 2장 제작해드려요.</li>
+				<li>보정이나 편집 없이, 얼굴이 잘 나오도록 잘라 그대로 사용해요.</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section id="review">
+	<h3>실제로 만나지는 못해도</h3>
+	<h1>즐거움은 나눌 수 있으니까</h1>
+	<span class="row flex">
+		<p class="flex30">🎉🎉🎉🎉🎉<br>ye89****<br>친구 생일파티 한다고 사서 다같이 화상채팅했는데 너무 재밌었어요 ㅋㅋㅋㅋㅋㅋ</p>
+		<img src="review1.png" class="flex70">	
+	</span>
+	<span class="row flex">
+		<img src="review2.png" class="flex70">
+		<p class="flex30">🎉🎉🎉🎉🎉<br>seung****<br>코로나라 생일 파티를 못해 아쉬운 차에 이거 사서 실시간 원격 파티 했는데 생각보다 재밌었어요ㅋㅋㅋ</p>
+	</span>
+	<span class="row flex">
+		<img src="review3.png" class="flex70">
+		<p class="flex30">🎉🎉🎉🎉🎉<br>hyeo****<br>생방송처럼 해보자고 생일인 친구가 카메라 들고 영상통화 하듯 놀았는데 신나더라구요! 글고 웃김 걍.</p>
+	</span>
+</section>
+<section id="caution">
+		<h3>흥겨운 파티를 원하기 전에!</h3>
+		<h1>구매 시 주의 사항</h1>
+		<ol>
+			<li>도구는 도울 뿐! 흥을 내는 것은 여러분의 몫입니다.</li>
+			<li>신난 나머지 먹거나, 물거나, 뜯지 마세요.</li>
+			<li>연꽃초를 이용할 때는 항상 화재에 유의하세요.</li>
+			<li>연꽃초는 사용 전 불량 여부를 파악하기 어렵습니다. 음정이 낮아지거나, 소리가 잘 나지 않을 경우 내부에 있는 구리 판을 건드려 조정해보세요. </li>
+			<li>주변 지인이 아닌, 유명인의 이미지를 사용하는 것은 불가능합니다.</li>
+			<li>사진을 사용해도 기분 나쁘지 않을 친구에게 선물해주세요.</li>
+			<li>사진을 1장만 첨부할 경우, 포토카드는 1장만 제작됩니다.</li>
+			<li>첨부된 사진의 화질이 좋지 않으면 현수막, 포토카드의 인쇄 화질 역시 떨어질 수 있으니 높은 퀄리티를 원하신다면 높은 퀄리티의 이미지를 첨부해주세요.</li>
+		</ol>
+</section>
+<section id="buy">
+	<h3>그럼 이제 즐겨볼까요?</h3>
+	<h1>구매하기</h1>
+	<div class="row2 flex">
+		<img src="buy.jpg" class="imgborder flex50">
+		<div class="mar30">
+			<h3 class="buyfont">최고의 생일을 위한<br>🎉생일 파티 키트🥳</h3>
+			<hr class="hr1">
+			<p class="txtbox">구성</p>
+			<p>생일 축하 모자*1, 파티 선글라스(택1), 깜짝! 생일 연꽃초*1, 생일 당사자 미니 현수막*1, 생일 당사자 포토카드*2 </p>
+			<select class="txtbox">
+				<option selected="selected">'선글라스'를 선택하세요 (필수)</option>
+				<option>분홍 파티 선글라스</option>
+				<option>생일 컵케이크 선글라스</option>
+				<option>화이트 생일 파티 선글라스</option>
+			</select>
+			<select class="txtbox">
+				<option selected="selected">'현수막'을 선택하세요 (필수)</option>
+				<option>분홍</option>
+				<option>초록</option>
+				<option>파랑</option>
+			</select>
+			<p>총액</p>
+			<p class="pay">19,900원</p>
+			<a href="http://naver.com" class="button" target="_new">구매하기</a>
+			<a href="http:youtube.com" class="button" target="_new">장바구니</a>
+		</div>
+	</div>
+</section>
+<footer>
+	<p>사이버몰 내 판매되는 상품 중에는 팡팡팡에서 등록한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다. 
+마켓플레이스(오픈마켓) 상품의 경우 팡팡팡은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 
+팡팡팡은 마켓플레이스(오픈마켓) 상품, 거래정보 및 거래 등에 대하여 책임을 지지 않습니다. 
+팡팡팡은 소비자 보호와 안전거래를 위해 신뢰관리센터(CM112@pangpangpang.com)를 운영하고 있으며, 관련 분쟁이 발생할 경우 별도의 분쟁처리절차에 의거 분쟁이 처리됩니다.
+Copyright &copy; 2020 All Rights Reserved.</p>
+	<img src="logo.png" class="logo">
+</footer>
+</body>
+</html>
